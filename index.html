@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Offline BEL Hierarchy Tree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h2>Upload Excel to View BEL Hierarchy</h2>
+    <label class="theme-switch" title="Toggle Day/Night Mode">
+      <input type="checkbox" id="toggleTheme" />
+      <span class="slider"></span> 🌙
+    </label>
+  </div>
+
+  <input type="file" id="upload" accept=".xlsx" title="Upload Excel File" />
+  <input type="text" id="searchBox" placeholder="Search employee..." title="Type employee name or ID" />
+  <button onclick="searchNode()" title="Search and highlight node">Search</button>
+  <button onclick="resetView()" title="Reset tree position and selection">Reset View</button>
+  <button onclick="zoomIn()" title="Zoom In Tree">Zoom In</button>
+  <button onclick="zoomOut()" title="Zoom Out Tree">Zoom Out</button>
+  <button onclick="toggleFullScreen()" title="Toggle Full Screen View">Full Screen</button>
+  <button onclick="exportAsImage()" title="Export tree as image">Export Image</button>
+  <button onclick="downloadExcel()" title="Download uploaded Excel">Download Excel</button>
+
+  <div id="network"></div>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="modal">
+    <div class="modal-content">
+      <span id="close" title="Close">×</span>
+      <div id="popupLogo"></div>
+      <div id="popupDetails"></div>
+    </div>
+  </div>
+
+  <!-- Required Scripts -->
+  <script src="xlsx.full.min.js"></script>
+  <script src="vis-network.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
