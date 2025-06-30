@@ -44,10 +44,10 @@ function drawTree(data) {
       id: id,
       label: `${emp["Employee Name"]}\n(${emp["Designation"]})`,
       shape: "box",
-      font: { size: 14 },
-      margin: 10,
-      widthConstraint: { minimum: 160 },
-      heightConstraint: { minimum: 60 },
+      font: { size: 18 }, // Increased font size
+      margin: 12,
+      widthConstraint: { minimum: 180 },
+      heightConstraint: { minimum: 70 },
       title: `<strong>${emp["Employee Name"]}</strong><br>Designation: ${emp["Designation"]}<br>Staff No: ${emp["Staff No"]}`
     });
   });
@@ -71,8 +71,8 @@ function drawTree(data) {
       hierarchical: {
         enabled: true,
         direction: "UD",
-        levelSeparation: 150,
-        nodeSpacing: 180,
+        levelSeparation: 200,  // More vertical space
+        nodeSpacing: 250       // More horizontal space
       }
     },
     autoResize: false,
@@ -91,7 +91,7 @@ function drawTree(data) {
         background: "#dee3fa",
         highlight: { border: "#2b7ce9", background: "#cde4ff" }
       },
-      font: { size: 14 }
+      font: { size: 18 } // Increased globally
     },
     edges: {
       arrows: { to: true },
