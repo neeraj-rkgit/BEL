@@ -19,7 +19,7 @@ A MERN stack offline web application to visualize employee hierarchy from an Exc
  <h3> Learnings & Purpose </h3>   <br>
 This project was built during my internship at D&E Antenna, BEL to improve data visualization and help management understand reporting structures better. <br> <br>
 
-<h1>👨‍💻 Developer  </h1>  <br>
+<h1>👨‍💻 Developer  </h1> 
  <h2> Neeraj Chaurasiya  </h2> <br>
 Intern – D&E Antenna, BEL  <br>
-📧 neerajchaurasiya390@gmail.com | 🌐 Portfolio  <br>
+📧 neerajchaurasiya390@gmail.com
