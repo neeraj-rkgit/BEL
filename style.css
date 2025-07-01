@@ -39,8 +39,8 @@ button {
 }
 
 button:hover {
-  background-color: #1a5fd0;
-  transform: scale(1.05);
+  background-color: #000000;
+  transform: scale(1.2);
 }
 
 #searchBox {
@@ -97,7 +97,7 @@ input:checked + .slider:before {
 }
 
 .modal-content {
-  background: linear-gradient(to bottom right, #e0eaff, #ffffff);
+  background: linear-gradient(to bottom right, #e9ddeb, #ffffff);
   margin: auto;
   padding: 20px;
   border-radius: 10px;
@@ -129,11 +129,13 @@ input:checked + .slider:before {
 
 #popupDetails h3 {
   margin-top: 10px;
-  color: #003366;
+  color: #032444;
+
 }
 
 #popupDetails p {
   margin: 4px 0;
+  color: rgb(0, 0, 0);
 }
 
 /* Dark Mode */
@@ -143,16 +145,16 @@ body.dark-mode {
 }
 
 body.dark-mode h2 {
-  color: #ffffff;
+  color: #6308f5;
 }
 
 body.dark-mode #network {
   border-color: #666;
-  background-color: #1e1e1e;
+  background-color: #d7e77c;
 }
 
 body.dark-mode .modal-content {
-  background: linear-gradient(to bottom right, #2b7ce9, #000000);
+  background: linear-gradient(to bottom right, #2b7ce9, #f0f0f0);
   color: white;
 }
 
